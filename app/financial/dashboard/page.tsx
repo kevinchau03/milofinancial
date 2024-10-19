@@ -2,9 +2,12 @@ import InfoCard from "@/components/info-card";
 import Graph from "@/components/graph";
 export default function Home() {
     return (
-        <div className="flex min-h-screen w-full flex-col">
+        <div className="flex flex-col">
             <main className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8">
-                <h1 className="text-4xl font-bold">Welcome, Kevin Chau</h1>
+                <div className="flex place-content-between">
+                    <h1 className="text-2xl font-bold">Kevin's Dashboard</h1>
+                    <button className="bg-white text-black rounded-md px-2 font-bold">Upload File</button>
+                </div>
                 <div className="grid gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-4">
                     <InfoCard
                         title="Total Income"
@@ -27,7 +30,7 @@ export default function Home() {
                         footer="-1% from last month"
                     />
                 </div>
-                <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-2">
+                <div className="grid gap-4 grid-cols-1 lg:grid-cols-2">
                     <Graph />
                     <Graph />
                 </div>

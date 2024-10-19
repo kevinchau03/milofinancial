@@ -7,7 +7,7 @@ export default function Home() {
       <p className="text-xl mb-8">
         Boost your savings with clear, visual insights into your spending habits—start making smarter choices today!
       </p>
-      <Link href="/dashboard" className="px-6 py-2 border-white border-2 rounded-lg transition">
+      <Link href="/financial/dashboard" className="px-6 py-2 bg-white text-black rounded-lg transition">
           Start Saving Now!
       </Link>
     </div>
